@@ -59,69 +59,95 @@
     }
     .contact-title {
       color: #28a745;
-      font-size: 1.3rem;
-      font-weight: 700;
-      margin-bottom: 18px;
-      letter-spacing: 0.5px;
+      font-size: 3.2rem;
+      font-weight: 850;
+      margin-top: 48px;
+      margin-bottom: 36px;
+      letter-spacing: 1.2px;
+      text-shadow: 0 3px 10px #fff8;
+      text-align: center;
     }
     .contact-form-semi {
       display: flex;
       flex-direction: column;
-      gap: 14px;
-      padding: 24px 18px 18px 18px;
-      border-radius: 16px;
-      max-width: 370px;
+      gap: 18px;
+      padding: 30px 18px 22px 18px;
+      border-radius: 22px;
+      max-width: 400px;
       width: 100%;
-      background: rgba(255, 255, 255, 0.7);
-      border: 1.5px solid #28a74544;
-      box-shadow: 0 4px 24px rgba(40,167,69,0.08);
-      backdrop-filter: blur(2px);
+      background: rgba(255,255,255,0.32);
+      border: 2px solid #28a74533;
+      box-shadow: 0 10px 36px rgba(40,167,69,0.15), 0 2px 8px rgba(0,0,0,0.08);
+      backdrop-filter: blur(10px) saturate(1.2);
     }
     .contact-form-semi label {
-      font-weight: 600;
-      color: #28a745;
-      font-size: 0.98rem;
-      margin-bottom: 2px;
+      font-weight: 700;
+      color: #000000;
+      font-size: 1.13rem;
+      margin-bottom: 3px;
     }
     .contact-form-semi input,
     .contact-form-semi textarea {
-      padding: 8px 12px;
-      border-radius: 8px;
-      border: 1.2px solid #28a745;
-      font-size: 0.95rem;
-      background: transparent;
+      padding: 12px 14px;
+      border-radius: 12px;
+      border: 1.5px solid #000000;
+      font-size: 1.13rem;
+      background: rgba(255,255,255,0.18);
       color: #222;
-      margin-bottom: 2px;
-      transition: border 0.2s, box-shadow 0.2s;
+      margin-bottom: 3px;
+      transition: border 0.2s, box-shadow 0.2s, background 0.2s;
       outline: none;
     }
     .contact-form-semi input:focus,
     .contact-form-semi textarea:focus {
-      border: 1.5px solid #43e97b;
-      box-shadow: 0 0 0 2px #43e97b33;
+      border: 2px solid #43e97b;
+      box-shadow: 0 0 0 3px #43e97b33;
+      background: rgba(255,255,255,0.32);
     }
     .contact-form-semi button {
       background: linear-gradient(90deg, #28a745 60%, #43e97b 100%);
       color: #fff;
       border: none;
-      border-radius: 8px;
-      padding: 12px 0;
-      font-size: 1rem;
-      font-weight: 700;
+      border-radius: 12px;
+      padding: 18px 0;
+      font-size: 1.25rem;
+      font-weight: 800;
       cursor: pointer;
-      margin-top: 8px;
-      box-shadow: 0 2px 12px rgba(40,167,69,0.13);
+      margin-top: 14px;
+      width: 100%;
+      box-shadow: 0 6px 24px rgba(40,167,69,0.20);
       transition: background 0.18s, box-shadow 0.18s, transform 0.18s;
+      letter-spacing: 0.7px;
     }
     .contact-form-semi button:hover {
       background: linear-gradient(90deg, #218838 60%, #43e97b 100%);
-      box-shadow: 0 4px 18px rgba(40,167,69,0.22);
-      transform: scale(1.03);
+      box-shadow: 0 12px 36px rgba(40,167,69,0.25);
+      transform: scale(1.05);
     }
     @media (max-width: 600px) {
+      .contact-title {
+        font-size: 1.7rem;
+        margin-top: 22px;
+        margin-bottom: 14px;
+      }
       .contact-form-semi {
-        padding: 12px 0 8px 0;
+        padding: 10px 2vw 8px 2vw;
         max-width: 98vw;
+        border-radius: 10px;
+      }
+      .contact-form-semi label {
+        font-size: 1rem;
+      }
+      .contact-form-semi input,
+      .contact-form-semi textarea {
+        font-size: 1rem;
+        padding: 8px 7px;
+        border-radius: 7px;
+      }
+      .contact-form-semi button {
+        font-size: 1.08rem;
+        padding: 12px 0;
+        border-radius: 7px;
       }
     }
     </style>
